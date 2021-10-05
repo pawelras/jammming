@@ -1,0 +1,35 @@
+.results {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 50vh;
+    min-height: 75vh;
+    overflow-y: scroll;
+    margin-bottom: 3vh;
+    max-height: 950px;
+    background-color: rgba(26, 33, 45, 0.8);
+    box-shadow: 0 4px 2px 2px #000000;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    }
+
+.results h2 {
+    
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px; 
+    font-size: 1.2rem;
+    
+}
+
+.resultsHeading {
+    background-color: rgba(26, 33, 45, 0.77);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}

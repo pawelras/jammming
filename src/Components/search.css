@@ -1,0 +1,37 @@
+
+
+.inputField {
+    font-size: 2rem;
+    width: 20rem;
+    text-align: center;
+    border: solid white 3px;
+}
+
+
+.searchBar {
+    clear: right;
+    margin-top: 3vh;
+    max-width: 100%;
+    padding-bottom: 4vh;
+}
+
+.searchButton {
+display: block;
+margin: 2rem auto auto auto;
+cursor: pointer;
+width: 12rem;
+padding: .77rem 0;
+border-radius: 54px;
+background-color: rgba(53, 15, 167, 0.7);
+text-align: center;
+font-size: 1rem;
+transition: background-color 0.5s ease;
+border: 0px;
+color: #fff;
+font-weight: 700;
+}
+
+.searchButton:hover {
+    background-color: #010c3f;
+    
+  }
