@@ -55,25 +55,28 @@ export class App extends React.Component {
 
   savePlaylist() {
     const trackURIs = [];
+    
     for (let i = 0; i < this.state.playlistTracks.length; i++) {
       trackURIs.push(this.state.playlistTracks[i].uri);
     }
+
     Spotify.savePlaylist(this.state.playlistName, trackURIs)
     .then(() => {
        this.setState({playlistName: 'New Playlist',
                       playlistTracks: [] });
     })
-  }
+  };
 
 componentDidMount() {
     window.addEventListener('load', () => {Spotify.getAccessToken()});
-  }
+  };
+  
 search(term) {
    Spotify.search(term)
   .then(searchResults => {
      this.setState({searchResults: searchResults});
-});
-}
+})
+};
 
 render() {
   
@@ -102,4 +105,3 @@ render() {
       );
   };
 };
-

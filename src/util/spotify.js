@@ -1,5 +1,5 @@
 let accessToken;
-const clientId = 'myClientId'; 
+const clientId = 'edaea94c452045c6bd812f27e6a4e297'; 
 const redirectURI = 'https://projectjamming.surge.sh/';
 
 export const Spotify = {
